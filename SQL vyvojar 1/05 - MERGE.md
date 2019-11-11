@@ -5,7 +5,7 @@
 ```TSQL
 USE master;
 GO
-IF EXIST (SELECT * FROM sysdatabases WHERE name='Test')
+IF EXISTS (SELECT * FROM sysdatabases WHERE name='Test')
 		DROP DATABASE Test;
 GO
 CREATE DATABASE Test;
