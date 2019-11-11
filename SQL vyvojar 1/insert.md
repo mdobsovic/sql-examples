@@ -30,6 +30,7 @@ VALUES  (10248, 2, 1, 5, 0),
 ```
 
 Vloží do tabuľky OrderDetails v schéme Sales hodnoty podľa tabuľky:
+
 |orderid|productid|unitprice|qty|discount|
 |---|---|---|---|---|
 |10248|2|1|5|0|
