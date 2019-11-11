@@ -77,7 +77,7 @@ MERGE
     INTO dbo.Ludia AS l
     USING dbo.Ludia2 AS l2
     ON (l.Meno = l2.Meno AND l.Priezvisko = l2.Priezvisko)
-    WHEN NOT MATCHET BY TARGET THEN
+    WHEN NOT MATCHED BY TARGET THEN
         INSERT (Meno, Priezvisko, Pohlavie, DatumNarodenia) VALUES (l2.Meno, l2.Priezvisko, l2.Pohlavie, l2.DatumNarodenia)
     WHEN MATCHED THEN 
         UPDATE SET l.DatumNarodenia = l2.DatumNarodenia
